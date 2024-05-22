@@ -1,6 +1,6 @@
 # Phonebook Application
 
-This is a simple phonebook application built with Django and styled using Bootstrap. It allows you to add contacts with multiple phone numbers, list all contacts, and view contact details.
+This is a simple phonebook application built with Django. It allows you to add contacts with multiple phone numbers, list all contacts, and view contact details.
 
 ## Features
 
