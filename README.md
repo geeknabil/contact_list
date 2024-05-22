@@ -17,14 +17,6 @@ The schema for this application includes two main models:
 
 The relationship is one-to-many: one contact can have multiple phone numbers.
 
-+-------------+ +-----------------+
-| Contact | 1 --- * | PhoneNumber |
-+-------------+ +-----------------+
-| id (PK) | | id (PK) |
-| name | | contact_id (FK) |
-+-------------+ | number |
-+-----------------+
-
 ## Running the Application
 
 ### Using Docker
