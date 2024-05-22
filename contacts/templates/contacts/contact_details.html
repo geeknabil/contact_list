@@ -1,0 +1,7 @@
+<h1>{{ contact.name }}</h1>
+<ul>
+    {% for phone_number in phone_numbers %}
+        <li>{{ phone_number.number }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'list_contacts' %}">Back to list</a>
