@@ -16,14 +16,7 @@ The schema for this application includes two main models:
 - **PhoneNumber**: Stores phone numbers associated with each contact.
 
 The relationship is one-to-many: one contact can have multiple phone numbers.
-
-+-------------+         +-----------------+
-|   Contact   | 1---*   |   PhoneNumber   |
-+-------------+         +-----------------+
-| id (PK)     |         | id (PK)         |
-| name        |         | contact_id (FK) |
-+-------------+         | number          |
-                        +-----------------+
+![Database Schema](schema.png)
 
 
 ## Running the Application
