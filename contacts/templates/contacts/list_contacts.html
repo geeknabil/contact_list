@@ -1,7 +1,15 @@
-<h1>Contact List</h1>
-<ul>
+{% extends 'contacts/base.html' %}
+
+{% block title %}Contact List{% endblock %}
+
+{% block content %}
+<h1 class="mt-5">Contact List</h1>
+<ul class="list-group mt-3">
     {% for contact in contacts %}
-        <li><a href="{% url 'contact_details' contact.id %}">{{ contact.name }}</a></li>
+        <li class="list-group-item">
+            <a href="{% url 'contact_details' contact.id %}">{{ contact.name }}</a>
+        </li>
     {% endfor %}
 </ul>
-<a href="{% url 'add_contact' %}">Add new contact</a>
+<a href="{% url 'add_contact' %}" class="btn btn-primary mt-3">Add new contact</a>
+{% endblock %}
